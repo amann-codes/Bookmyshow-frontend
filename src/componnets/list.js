@@ -308,6 +308,9 @@ export const catagoury = [
   popular,
 ];
 
-export const lang = ["Hindi", "English", "Ille", "Punujabi", "Gujrati"];
-export const pr = ["Hindi", "English", "Ille", "Punujabi", "Gujrati"];
-export const dr = ["Hindi", "English", "Ille", "Punujabi", "Gujrati"];
+
+export const lang = ["Hindi", "English", "Punujabi", "Gujrati", "Korean", "Assamese", "Multi Language", "Tamil", "Kannada"];
+export const genre = ["Drama", "Comedy", "Action", "Animation", "Fantasy", "Crime", "Horror"];
+export const format = ["2D", "3D", "4DX 3D", "3D SCREEN X", "IMAX 3D", "ICE", "ICE 3D"];
+export const filters = ["Languages", "Genre", "Format"];
+export const dates = ["Today", "Tommorow", "This Weekend"];
