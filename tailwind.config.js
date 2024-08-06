@@ -12,10 +12,11 @@ export default {
       gridTemplateRows: {
         'custom-1': 'repeat(1, 1fr)',
       },
-      transform: {
-        'translate-x-1270': '-1270px',
+      translate: {
+        '-x-1270': '-1270px',
       },
       screens: {
+        'sm': '640px',
         'lg': '1024px',
       },
       fontFamily: {

@@ -217,7 +217,7 @@ export const popular = [
     about1: "Dine in the Dark",
     about2: "Dining Experience",
     about3: "",
-  },
+  }
 ];
 
 export const latest = [

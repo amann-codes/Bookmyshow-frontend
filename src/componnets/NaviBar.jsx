@@ -18,7 +18,7 @@ const navElements = [
 
 export function NaviBar() {
   return (
-    <div className="bg-slate-200">
+    <div className="bg-slate-100">
       <div className="h-10 max-w-[1240px] w-11/12 m-auto">
         <div className="flex h-full justify-between items-center">
           <div className="flex justify-start h-full items-center">
