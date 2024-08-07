@@ -3,7 +3,7 @@ import { ImageCard } from "./ImageCard";
 export function Card(prop) {
 
   return (
-    <div className="rounded-md w-[222px] max-h-[500px] cursor-pointer">
+    <div className="rounded-md sm:max-w-[222px] sm:[100px] sm:max-h-max sm:h-max cursor-pointer">
       <a>
         <div>
           <ImageCard src={prop.src} alt={prop.alt}/>

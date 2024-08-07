@@ -14,8 +14,8 @@ import {
 } from "../componnets/list";
 export function Homepage() {
   return (
-    <div className="bg-[#f5f5f5]">
-      <Header />
+    <div className="bg-[#f5f5f5] overflow-y-scroll">
+      <Header/>
       {/* <Space /> */}
       <CommonCard cat={movies} title={"Recommended Movies"} />
       <CommonCard cat={music} title={"Your Music Studio"} />
@@ -25,6 +25,7 @@ export function Homepage() {
       <CommonCard cat={popular} title={"Popular Events"} />
       <CommonCard cat={latest} title={"Latest plays"} />
       <CommonCard cat={top} title={"Top Games & Sport Events"} />
-      <Footer />    </div>
+      <Footer />    
+    </div>
   );
 }

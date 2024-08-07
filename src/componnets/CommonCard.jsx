@@ -42,9 +42,9 @@ export function CommonCard(props) {
   }, []);
 
   return (
-    <div className="flex flex-col m-auto max-w-[1240px] w-11/12 h-full py-8 mb-12">
+    <div className="flex flex-col sm:m-auto m-auto sm:max-w-[1240px] max-w-full sm:w-11/12 w-11/12 sm:h-full h-full sm:py-8 py-4 sm:mb-8 mb-1 mt-4 ">
       <div className="flex justify-between items-center mb-2">
-        <div className="font-roboto text-[#333333] text-2xl font-bold">{props.title}</div>
+        <div className="font-roboto text-[#333333] sm:text-2xl text-xl sm:font-bold font-semibold">{props.title}</div>
         <div className="text-sm text-red-400 font-medium cursor-pointer">
           See All ›
         </div>
@@ -52,7 +52,7 @@ export function CommonCard(props) {
       <div className="relative">
         {canScrollLeft && (
           <button
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-slate-400 rounded-full opacity- 100 text-white p-2 z-10"
+            className="absolute left-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-slate-400 rounded-full opacity-100 text-white p-2 z-5"
             onClick={() => scroll("left")}
           >
             <svg
@@ -72,7 +72,7 @@ export function CommonCard(props) {
           </button>
         )}
         <div
-          className="grid grid-cols grid-rows-1 grid-flow-col gap-x-8 gap-y-0 overflow-x-scroll overflow-y-hidden scroll-smooth scrollbar-hide"
+          className="grid sm:grid-cols grid-cols sm:grid-rows-1 grid-rows-1 sm:grid-flow-col grid-flow-col sm:gap-x-8 gap-x-4 gap-y-0 sm:gap-y-0 overflow-x-scroll overflow-y-hidden scroll-smooth scrollbar-hide"
           ref={scrollRef}
         >
           {
@@ -92,7 +92,7 @@ export function CommonCard(props) {
         </div>
         {canScrollRight && (
           <button
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-slate-400 rounded-full opacity-100 text-white p-2 z-10"
+            className="absolute right-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-slate-400 rounded-full opacity-100 text-white p-2 z-5"
             onClick={() => scroll("right")}
           >
             <svg

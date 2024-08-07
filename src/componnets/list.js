@@ -331,3 +331,19 @@ export const navElements2 = [
   { to: '/offers', title: 'Offers' },
   { to: '/giftcards', title: 'Gift Cards' }
 ];
+
+export const Trendingbox = [
+  { about1: "Despicable Me 4", about2: "Movies" },
+  { about1: "Deadpool & Wolverine", about2: "Movies" },
+  { about1: "Karan Aujhla - It Was All A Dream", about2: "Events" },
+  { about1: "Sunburn Arena feat. Alan Walker", about2: "Events" },
+  { about1: "Kalki 2898D", about2: "Movies" },
+  { about1: "Dhanji-BARGAM Tour", about2: "Events" },
+  { about1: "Kill", about2: "Movies" },
+  { about1: "Despicable Me 4", about2: "Movies" },
+  { about1: "Deadpool & Wolverine", about2: "Movies" },
+  { about1: "Karan Aujhla - It Was All A Dream", about2: "Events" },
+  { about1: "Sunburn Arena feat. Alan Walker", about2: "Events" },
+  { about1: "Sarfira", about2: "Movies" },
+  { about1: "Karan Aujhla - It Was All A Dream", about2: "Events" },
+];

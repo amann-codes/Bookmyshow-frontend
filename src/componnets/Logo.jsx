@@ -1,7 +1,6 @@
 export function Logo() {
   return (
     <a className="sm:mr-4 mr-1" href="/">
-      {/* mr-4 */}
       <svg
       className="sm:w-[115px] sm:h-[34px] w-[110px] h-[50px] mr-2"
         viewBox="0 0 115 33"

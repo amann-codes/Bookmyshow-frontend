@@ -1,7 +1,11 @@
 export function ImageCard(prop) {
-    return (
-        <div className='rounded-md w-full h-[378px] bg-slate-300'>
-            <img className='w-full h-full rounded-[inherit]' src={prop.src} alt={prop.alt} />
-        </div>
-    );
+  return (
+    <div className="rounded-md sm:w-[222px] sm:h-full w-[110px] h-[183px] bg-slate-300">
+      <img
+        className="sm:w-full sm:h-full h-full w-full rounded-[inherit]"
+        src={prop.src}
+        alt={prop.alt}
+      />
+    </div>
+  );
 }
