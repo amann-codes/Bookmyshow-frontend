@@ -314,3 +314,20 @@ export const genre = ["Drama", "Comedy", "Action", "Animation", "Fantasy", "Crim
 export const format = ["2D", "3D", "4DX 3D", "3D SCREEN X", "IMAX 3D", "ICE", "ICE 3D"];
 export const filters = ["Languages", "Genre", "Format"];
 export const dates = ["Today", "Tommorow", "This Weekend"];
+
+
+export const navElements = [
+  { to: '/movies', title: 'Movies' },
+  { to: '/events', title: 'Events' },
+  { to: '/plays', title: 'Plays' },
+  { to: '/sports', title: 'Sports' },
+  { to: '/activities', title: 'Activities' }
+];
+
+
+export const navElements2 = [
+  { to: '/listyourshow', title: 'ListYourShow' },
+  { to: '/corporates', title: 'Corporates' },
+  { to: '/offers', title: 'Offers' },
+  { to: '/giftcards', title: 'Gift Cards' }
+];
