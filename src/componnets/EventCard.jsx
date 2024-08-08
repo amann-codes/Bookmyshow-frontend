@@ -1,11 +1,11 @@
 import { TitleCard } from "./TitleCard";
 import { ImageCard } from "./ImageCard";
-export function EventCard({ src, alt, about1, about2, about3 }){
-    return <div className="rounded-md w-[200px] max-h-[500px] cursor-pointer mb-8">
+export function EventCard(prop){
+    return <div className="rounded-md sm:max-w-[200px] sm:[100px] sm:max-h-max sm:h-max cursor-pointer sm:mb-8 mb-4">
         <a>
             <div>
-                <ImageCard src={src} alt={alt}/>
-                <TitleCard about1={about1} about2={about2} about3={about3}/>
+                <ImageCard src={prop.src} alt={prop.alt}/>
+                <TitleCard about1={prop.about1} about2={prop.about2} about3={prop.about3}/>
             </div>
         </a>
     </div>

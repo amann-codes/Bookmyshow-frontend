@@ -1,17 +1,18 @@
 import { EventCard } from "./EventCard";
+import { FilterButton } from "./Filterbutton";
 import { FilterCard } from "./FilterCard";
-import { movies } from './list'
 export function EventCommonCard(props) {
   return (
     <div className="max-w-[1240px] w-11/12 m-auto mt-[48px]">
       <div className="flex flex-row">
-        <div className="flex flex-col mr-[30px]">
+        <div className="hidden sm:flex sm:flex-col sm:mr-[30px]">
           <div className="text-xl font-bold mb-4">Filters</div>
           <div className="flex flex-col ">
             <FilterCard />
           </div>
         </div>
-        <div className="flex flex-col">
+        
+        <div className="flex flex-col sm:mb-10 mb-8">
           <div className="text-xl font-bold mb-4">{props.title1}</div>
           <div className="flex flex-wrap gap-x-8">
             { 
@@ -20,6 +21,9 @@ export function EventCommonCard(props) {
               })
             }
           </div>
+          <div className="fixed bottom-2 right-2 sm:hidden">
+            <FilterButton/>
+        </div>
         </div>
       </div>
     </div>

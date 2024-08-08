@@ -297,19 +297,9 @@ export const titleList = [
   { title: "Top Games And Sports Events" },
 ];
 
-export const catagoury = [
-  movies,
-  music,
-  top,
-  fun,
-  outdoor,
-  laughter,
-  latest,
-  popular,
-];
 
 
-export const lang = ["Hindi", "English", "Punujabi", "Gujrati", "Korean", "Assamese", "Multi Language", "Tamil", "Kannada"];
+export const lang = ["Hindi", "English", "Punjabi", "Gujrati", "Korean", "Assamese", "Multi Language", "Tamil", "Kannada"];
 export const genre = ["Drama", "Comedy", "Action", "Animation", "Fantasy", "Crime", "Horror"];
 export const format = ["2D", "3D", "4DX 3D", "3D SCREEN X", "IMAX 3D", "ICE", "ICE 3D"];
 export const filters = ["Languages", "Genre", "Format"];
@@ -342,8 +332,5 @@ export const Trendingbox = [
   { about1: "Kill", about2: "Movies" },
   { about1: "Despicable Me 4", about2: "Movies" },
   { about1: "Deadpool & Wolverine", about2: "Movies" },
-  { about1: "Karan Aujhla - It Was All A Dream", about2: "Events" },
-  { about1: "Sunburn Arena feat. Alan Walker", about2: "Events" },
-  { about1: "Sarfira", about2: "Movies" },
-  { about1: "Karan Aujhla - It Was All A Dream", about2: "Events" },
+  { about1: "Sarfira", about2: "Movies" }
 ];

@@ -19,9 +19,6 @@ export default {
         'sm': '640px',
         'lg': '1024px',
       },
-      fontFamily: {
-        'roboto': ['Roboto', 'sans-serif'],
-      }
     },
   },
   plugins: [

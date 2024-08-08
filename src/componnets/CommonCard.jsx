@@ -44,7 +44,7 @@ export function CommonCard(props) {
   return (
     <div className="flex flex-col sm:m-auto m-auto sm:max-w-[1240px] max-w-full sm:w-11/12 w-11/12 sm:h-full h-full sm:py-8 py-4 sm:mb-8 mb-1 mt-4 ">
       <div className="flex justify-between items-center mb-2">
-        <div className="font-roboto text-[#333333] sm:text-2xl text-xl sm:font-bold font-semibold">{props.title}</div>
+        <div className="text-[#333333] sm:text-2xl text-xl sm:font-bold font-semibold">{props.title}</div>
         <div className="text-sm text-red-400 font-medium cursor-pointer">
           See All ›
         </div>
