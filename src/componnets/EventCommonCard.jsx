@@ -12,10 +12,10 @@ export function EventCommonCard(props) {
           </div>
         </div>
         
-        <div className="flex flex-col sm:mb-10 mb-8">
+        <div className="flex flex-col sm:mb-8 mb-8">
           <div className="text-xl font-bold mb-4">{props.title1}</div>
-          <div className="flex flex-wrap gap-x-8">
-            { 
+          <div className="sm:grid sm:grid-cols-4 sm:gap-8 grid grid-cols-3 gap-4">
+            {
               props.cat.map((items, index)=>{
                 return <EventCard key={index} src={items.src} alt={items.about1} about1={items.about1} about2={items.about2} about3={items.about3}/>
               })

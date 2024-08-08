@@ -1,7 +1,7 @@
 import { TitleCard } from "./TitleCard";
 import { ImageCard } from "./ImageCard";
 export function EventCard(prop){
-    return <div className="rounded-md sm:max-w-[200px] sm:[100px] sm:max-h-max sm:h-max cursor-pointer sm:mb-8 mb-4">
+    return <div className="rounded-md sm:max-w-[200px] max-w-auto w-auto sm:max-h-max max-h-auto sm:h-max cursor-pointer mb-8">
         <a>
             <div>
                 <ImageCard src={prop.src} alt={prop.alt}/>

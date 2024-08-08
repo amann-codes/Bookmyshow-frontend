@@ -1,6 +1,6 @@
 export function ImageCard(prop) {
   return (
-    <div className="rounded-md sm:w-[222px] sm:h-full w-[110px] h-[183px] bg-slate-300">
+    <div className="rounded-md sm:w-auto sm:h-full w-[110px] h-[183px] bg-slate-300">
       <img
         className="sm:w-full sm:h-full h-full w-full rounded-[inherit]"
         src={prop.src}
