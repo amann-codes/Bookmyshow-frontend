@@ -52,7 +52,7 @@ export function CommonCard(props) {
       <div className="relative">
         {canScrollLeft && (
           <button
-            className="absolute left-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-slate-400 rounded-full opacity-100 text-white p-2 z-5"
+            className="absolute left-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-[#999999] rounded-full opacity-100 text-white p-2 z-5"
             onClick={() => scroll("left")}
           >
             <svg
@@ -92,7 +92,7 @@ export function CommonCard(props) {
         </div>
         {canScrollRight && (
           <button
-            className="absolute right-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-slate-400 rounded-full opacity-100 text-white p-2 z-5"
+            className="absolute right-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-[#999999] rounded-full opacity-100 text-white p-2 z-5"
             onClick={() => scroll("right")}
           >
             <svg

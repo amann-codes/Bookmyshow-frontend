@@ -1,11 +1,11 @@
 import { EventCommonCard } from "../componnets/EventCommonCard";
 import { Header } from "../componnets/Header";
-import { outdoor } from "../componnets/list";
-export function ActivitiesPAGE() {
+import { top } from "../componnets/list";
+export function EventPAGE() {
   return (
     <div className="bg-[#f5f5f5]">
-      <Header/>
-      <EventCommonCard cat={outdoor} title1={"Activities"} />
+      <Header />
+      <EventCommonCard cat={top} title1={"Events"} />
     </div>
   );
 }

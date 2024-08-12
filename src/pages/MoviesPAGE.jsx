@@ -1,3 +1,4 @@
+
 import { EventCommonCard } from "../componnets/EventCommonCard";
 import { Header } from "../componnets/Header";
 import { movies } from '../componnets/list' 

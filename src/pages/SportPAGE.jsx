@@ -1,11 +1,11 @@
 import { EventCommonCard } from "../componnets/EventCommonCard";
 import { Header } from "../componnets/Header";
-import { fun } from "../componnets/list";
-export function PlaysPAGE() {
+import { outdoor } from "../componnets/list";
+export function SportPAGE() {
   return (
     <div>
       <Header/>
-      <EventCommonCard cat={fun} title1={"Latest Plays"} />
+      <EventCommonCard cat={outdoor} title1={"Sport Events"} />
     </div>
   );
 }
