@@ -1,6 +1,6 @@
 export function TitleCard(prop) {
   return (
-    <div className="flex flex-col sm:w-[222px] sm:h-full w-[110px] h-max mt-1 pt-1">
+    <div className="flex flex-col sm:w-[200px] sm:h-full w-[110px] h-max mt-1 pt-1">
       <div className="flex w-full">
         <div className="sm:text-lg text-base font-medium mb-1 overflow-hidden text-ellipsis whitespace-normal">
           {prop.about1}

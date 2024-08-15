@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { EventCommonCard } from "../componnets/EventCommonCard";
 import { Header } from "../componnets/Header";
-import { fun } from "../componnets/list";
 import { Locationlist } from "../componnets/Locationlist";
 import { Signup } from "../componnets/Signup";
 import { SideMenuBar } from "../componnets/SideMenuBar";
-export function PlaysPAGE() {
+import { GiftComp } from '../componnets/GiftComp';
+export function GiftCard() {
   const [locate, setlocate] = useState(false);
   const [log, setlog] = useState(false);
   const [menu, setMenu] = useState(false);
@@ -17,7 +16,7 @@ export function PlaysPAGE() {
         log={() => setlog(true)}
         openmenu={() => setMenu(true)}
       />
-      <EventCommonCard cat={fun} title1={"Latest Plays"} />
+      <GiftComp />
       {locate && <Locationlist close={() => setlocate(false)} />}
       {log && <Signup close={() => setlog(false)} />}
       {menu && (

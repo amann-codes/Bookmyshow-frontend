@@ -79,6 +79,7 @@ export function CommonCard(props) {
             props.cat.map((items, index) => {
               return (
                 <Card
+                  height={"366px"}
                   key={index}
                   src={items.src}
                   alt={items.about1}

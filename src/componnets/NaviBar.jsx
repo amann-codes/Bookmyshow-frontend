@@ -5,7 +5,7 @@ import { navElements, navElements2 } from "./list";
 
 export function NaviBar() {
   return (
-    <div className="bg-slate-100">
+    <div className="bg-gray-200 border-b-[0.3px] border-gray-300 drop-shadow-lg">
       <div className="h-10 max-w-[1240px] w-11/12 m-auto">
         <div className="sm:flex h-full justify-between items-center">
           <div className='flex justify-between sm:flex sm:justify-start h-full items-center'>

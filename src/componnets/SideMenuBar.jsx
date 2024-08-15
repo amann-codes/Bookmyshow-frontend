@@ -15,7 +15,7 @@ export function SideMenuBar(prop) {
     <div
       ref={menuref}
       onClick={closeMenu}
-      className="fixed flex justify-end inset-0 h-screen w-screen drop-shadow-2xl bg-black bg-opacity-20"
+      className="fixed flex justify-end inset-0 h-screen w-screen drop-shadow-2xl bg-black bg-opacity-20 overflow-y-scroll overflow-auto scrollbar-hide"
     >
       <div className="sm:w-1/4 w-2/3 sm:h-full bg-white">
         <div className="drop-shadow-md">

@@ -22,7 +22,7 @@ function LocationBlock(prop) {
 
 export function Locationlist(prop) {
   return (
-    <div className="fixed inset-0 flex flex-col justify-start sm:pt-[120px] w-screen sm:mx-auto h-screen items-center drop-shadow-lg sm:bg-transparent sm:backdrop-blur-sm backdrop-blur-sm">
+    <div className="fixed inset-0 flex flex-col justify-start sm:pt-[120px] w-screen sm:mx-auto h-screen items-center drop-shadow-lg sm:bg-transparent sm:backdrop-blur-sm backdrop-blur-sm overflow-y-scroll scrollbar-hide overflow-auto">
       <div className="hidden sm:flex sm:mb-3" onClick={prop.close}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export function Locationlist(prop) {
           />
         </svg>
       </div>
-      <div className="flex flex-col w-full h-full sm:w-auto sm:h-auto bg-white rounded-md px-16 py-2 sm:pt-6 sm:pb-10">
+      <div className="flex flex-col bg-white rounded-md px-16 py-2 sm:pt-6 sm:pb-10">
         <div className="flex flex-row items-center mb-4 mt-2 sm:my-2">
           <div className="w-full">
             <SearchLink placeholder={"Search for your city"} />
