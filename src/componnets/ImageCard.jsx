@@ -6,10 +6,17 @@ export function ImageCard(prop) {
   return (
     <div className="rounded-md sm:w-auto sm:h-full w-[110px] h-[183px]">
       {!isLoaded && (
-        <div className="hidden sm:block rounded-full my-[100px] mx-auto sm:animate-spin sm:bg-slate-300 sm:w-[110px] sm:h-[120px]"></div>
+        <div className="mt-20 sm:mx-auto mx-6">
+          <div className="animate-bounce">
+            <div className="sm:w-[110px] sm:h-[100px] sm:mx-[56px] sm:my-[100px] w-[50px] h-[60px] animate-spin-slow rounded-full bg-slate-300"></div>
+          </div>
+        </div>
       )}
+
       <img
-        className={`sm:w-full sm:h-full h-full w-full rounded-[inherit] ${isLoaded ? '' : 'hidden'}`}
+        className={`w-full h-full rounded-[inherit] ${
+          isLoaded ? "" : "hidden"
+        }`}
         src={prop.src}
         alt={prop.alt}
         onLoad={() => setIsLoaded(true)}

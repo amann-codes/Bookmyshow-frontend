@@ -23,8 +23,8 @@ function LocationBlock(prop) {
 export function Locationlist(prop) {
   return (
     <div className="fixed inset-0 flex flex-col justify-start sm:pt-[120px] w-screen sm:mx-auto h-screen items-center drop-shadow-lg sm:bg-transparent sm:backdrop-blur-sm backdrop-blur-sm overflow-y-scroll scrollbar-hide overflow-auto">
-      <div className="hidden sm:flex sm:mb-3" onClick={prop.close}>
-        <svg
+      <div className="hidden sm:flex sm:mb-3" >
+        <svg onClick={prop.close}
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"

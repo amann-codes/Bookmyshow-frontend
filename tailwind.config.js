@@ -19,6 +19,9 @@ export default {
         'sm': '640px',
         'lg': '1024px',
       },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
     },
   },
   plugins: [

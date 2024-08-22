@@ -12,19 +12,20 @@ function Gift(prop) {
             onMouseOver={() => setHoverIndex(index)}
             onMouseOut={() => setHoverIndex(null)}
           >
-            <img src={items.src} className="rounded-md h-[184px] w-[286px]"></img>
+            <img
+              src={items.src}
+              className="rounded-md h-[184px] w-[286px]"
+            ></img>
             {hoverIndex == index && (
-              <div>
-                <Info
-                  open={() => prop.open(items)}
-                  combo={items.combo}
-                  cprice={items.cprice}
-                  card1={items.card1}
-                  C1price={items.C1price}
-                  card2={items.card2}
-                  C2price={items.C2price}
-                />
-              </div>
+              <Info
+                open={() => prop.open(items)}
+                combo={items.combo}
+                cprice={items.cprice}
+                card1={items.card1}
+                C1price={items.C1price}
+                card2={items.card2}
+                C2price={items.C2price}
+              />
             )}
           </div>
         );
@@ -135,7 +136,10 @@ function Giftpop(prop) {
           </div>
           <div className="flex-col justify-start mx-11 bg-white rounded-lg mt-11 shadow-2xl">
             <div className="flex justify-center w-max h-max border-dashed border-b-[1px] border-gray-600">
-              <img className=" rounded-t-lg h-[184px] w-[286px]" src={prop.items.src}></img>
+              <img
+                className=" rounded-t-lg h-[184px] w-[286px]"
+                src={prop.items.src}
+              ></img>
             </div>
             <div className="flex flex-col justify-start">
               <p className="text-normal font-medium text-red-500 mt-5 ml-4">
@@ -195,6 +199,7 @@ function Info(prop) {
 export function GiftComp() {
   const [giftpop, setPop] = useState(false);
   const [selItem, setItem] = useState(null);
+
   return (
     <div className="flex flex-col items-center">
       <div className="w-3/4 h-max my-12 mx-auto">
@@ -203,6 +208,7 @@ export function GiftComp() {
         </p>
       </div>
       <Gift
+        skl={() => setloaded(false)}
         open={(items) => {
           setItem(items);
           setPop(true);

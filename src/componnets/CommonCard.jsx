@@ -44,15 +44,17 @@ export function CommonCard(props) {
   return (
     <div className="flex flex-col sm:m-auto m-auto sm:max-w-[1240px] max-w-full sm:w-11/12 w-11/12 sm:h-full h-full sm:py-8 py-4 sm:mb-8 mb-1 mt-4 ">
       <div className="flex justify-between items-center mb-2">
-        <div className="text-[#333333] sm:text-2xl text-xl sm:font-bold font-semibold">{props.title}</div>
+        <div className="text-[#333333] sm:text-2xl text-xl sm:font-bold font-semibold">
+          {props.title}
+        </div>
         <div className="text-sm text-red-400 font-medium cursor-pointer">
           See All ›
         </div>
       </div>
-      <div className="relative">
+      <div className="hidden sm:block relative">
         {canScrollLeft && (
           <button
-            className="absolute left-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-[#999999] rounded-full opacity-100 text-white p-2 z-5"
+            className="absolute left-0 sm:top-[45%] transform translate-y-[420%] bg-[#999999] rounded-full opacity-100 text-white p-2"
             onClick={() => scroll("left")}
           >
             <svg
@@ -71,29 +73,10 @@ export function CommonCard(props) {
             </svg>
           </button>
         )}
-        <div
-          className="grid sm:grid-cols grid-cols sm:grid-rows-1 grid-rows-1 sm:grid-flow-col grid-flow-col sm:gap-x-8 gap-x-4 gap-y-0 sm:gap-y-0 overflow-x-scroll overflow-y-hidden scroll-smooth scrollbar-hide"
-          ref={scrollRef}
-        >
-          {
-            props.cat.map((items, index) => {
-              return (
-                <Card
-                  height={"366px"}
-                  key={index}
-                  src={items.src}
-                  alt={items.about1}
-                  about1={items.about1}
-                  about2={items.about2}
-                  about3={items.about3}
-                />
-              );
-            })
-          }
-        </div>
+
         {canScrollRight && (
           <button
-            className="absolute right-0 sm:top-[45%] top-1/4 transform -translate-y-1/2 bg-[#999999] rounded-full opacity-100 text-white p-2 z-5"
+            className="absolute right-0 sm:top-[45%] transform translate-y-[420%] bg-[#999999] rounded-full opacity-100 text-white p-2"
             onClick={() => scroll("right")}
           >
             <svg
@@ -112,6 +95,32 @@ export function CommonCard(props) {
             </svg>
           </button>
         )}
+      </div>
+      <div
+        className="grid sm:grid-cols grid-cols sm:grid-rows-1 grid-rows-1 sm:grid-flow-col grid-flow-col sm:gap-x-8 gap-x-4 gap-y-0 sm:gap-y-0 overflow-x-scroll overflow-y-hidden scroll-smooth scrollbar-hide"
+        ref={scrollRef}
+      >
+        {props.cat.map((items, index) => {
+          return (
+            <Card
+              height={"366px"}
+              key={index}
+              src={items.src}
+              alt={items.about1}
+              about1={items.about1}
+              about2={items.about2}
+              about={items.about}
+              duration={items.duration}
+              releaseDate={items.releaseDate}
+              genre={items.genre}
+              lang={items.lang}
+              screeningTypes={items.screeningTypes}
+              location={items.location}
+              certification={items.certification}
+              cast={items.cast}
+            />
+          );
+        })}
       </div>
     </div>
   );

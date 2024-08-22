@@ -11,19 +11,35 @@ export function EventCommonCard(props) {
             <FilterCard />
           </div>
         </div>
-        
+
         <div className="flex flex-col sm:mb-8 mb-8">
           <div className="text-xl font-bold mb-4">{props.title1}</div>
           <div className="sm:grid sm:grid-cols-4 sm:gap-8 grid grid-cols-3 gap-4">
-            {
-              props.cat.map((items, index)=>{
-                return <EventCard height={"330px"} key={index} src={items.src} alt={items.about1} about1={items.about1} about2={items.about2} about3={items.about3}/>
-              })
-            }
+            {props.cat.map((items, index) => {
+              return (
+                <EventCard
+                  height={"330px"}
+                  key={index}
+                  src={items.src}
+                  alt={items.about1}
+                  about1={items.about1}
+                  about2={items.about2}
+                  about={items.about}
+                  duration={items.duration}
+                  releaseDate={items.releaseDate}
+                  genre={items.genre}
+                  lang={items.lang}
+                  screeningTypes={items.screeningTypes}
+                  location={items.location}
+                  certification={items.certification}
+                  cast={items.cast}
+                />
+              );
+            })}
           </div>
           <div className="fixed bottom-2 right-2 sm:hidden">
-            <FilterButton/>
-        </div>
+            <FilterButton />
+          </div>
         </div>
       </div>
     </div>
