@@ -39,7 +39,7 @@ export function Locationlist(prop) {
           />
         </svg>
       </div>
-      <div className="flex flex-col bg-white rounded-md px-16 py-2 sm:pt-6 sm:pb-10">
+      <div className="flex flex-col h-full sm:h-auto bg-white rounded-md px-16 py-2 sm:pt-6 sm:pb-10">
         <div className="flex flex-row items-center mb-4 mt-2 sm:my-2">
           <div className="w-full">
             <SearchLink placeholder={"Search for your city"} />
